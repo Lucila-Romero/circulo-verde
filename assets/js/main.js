@@ -84,13 +84,24 @@
    */
   function aosInit() {
     AOS.init({
-      duration: 600,
+      duration: 1000,
       easing: 'ease-in-out',
-      once: true,
-      mirror: false
+      once: false,
+      mirror: false,
+      offset: 50,
+      disable: 'mobile'
     });
   }
-  window.addEventListener('load', aosInit);
+  
+  // Initialize AOS after a short delay to ensure DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(aosInit, 100);
+  });
+  
+  // Refresh AOS on window load
+  window.addEventListener('load', function() {
+    AOS.refresh();
+  });
 
   /**
    * Initiate glightbox
