@@ -4,45 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circulo Verde</title>
-    <style>
-      header {
-        background-image: url('assets/img/header-background.png'); /* Ruta de la imagen de fondo */
-        background-size: cover; /* Ajusta la imagen para que cubra todo el header */
-        background-position: center; /* Centra la imagen */
-        background-repeat: no-repeat; /* Evita que la imagen se repita */
-        height: 100px; /* Altura del header */
-        width: 1520px;
-        color: white; /* Color del texto */
-        display: flex;
-        align-items: center; /* Centra el contenido verticalmente */
-        justify-content: center; /* Centra el contenido horizontalmente */
-        text-align: center;
-      }
-  
-      header h1 {
-        font-size: 48px; /* Tamaño de la fuente */
-        margin: 0; /* Elimina el margen */
-      }
-  
-      header p {
-        font-size: 24px; /* Tamaño de la fuente */
-        margin: 0; /* Elimina el margen */
-      }
-    </style>
-
-
-  <title>Index - Circulo Verde</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
+    
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Righteous&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -54,6 +24,38 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    header {
+      background-image: url('assets/img/header-background.png'); /* Ruta de la imagen de fondo */
+      background-size: cover; /* Ajusta la imagen para que cubra todo el header */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      height: 106px; /* Altura del header */
+      width: 1520px;
+      color: white; /* Color del texto */
+      display: flex;
+      align-items: center; /* Centra el contenido verticalmente */
+      justify-content: center; /* Centra el contenido horizontalmente */
+      text-align: center;
+   
+    }
+
+    header h1 {
+      font-size: 48px; /* Tamaño de la fuente */
+      margin: 0; /* Elimina el margen */
+    }
+
+    header p {
+      font-size: 24px; /* Tamaño de la fuente */
+      margin: 0; 
+      font-weight: 500;/* Elimina el margen */
+    }
+  </style>
+
+
+<title>Index - Circulo Verde</title>
+<meta content="" name="description">
+<meta content="" name="keywords">
 
 
 <body class="index-page">
@@ -70,10 +72,10 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">HOME<br></a></li>
-          <li><a href="#about">QUIENES SOMOS</a></li>
-          <li><a href="#services">SERVICIOS</a></li>
-          <li><a href="#portfolio">GALERÍA</a></li>
+          <li><a href="#quienes-somos">QUIENES SOMOS</a></li>
+          <li><a href="#background-service"> SERVICIOS </a></li>
           <li><a href="#pricing">CURSOS</a></li>
+          <li><a href="#portfolio">GALERÍA</a></li>
           <li><a href="#contact">CONTACTO</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list" ></i>
@@ -94,7 +96,7 @@
             border: 2px solid #000; /* Elimina el borde */
             border-radius:0px; /* Redondea los bordes */
             font-size: 14px; /* Tamaño de la fuente */
-            font-weight: normal; /* Negrita */
+            font-weight: 600; /* Negrita */
             transition:var(--background-color) 0.3s ease; /* Transición suave */
   
           }
@@ -105,7 +107,8 @@
         </style>
      
       <body>
-        <a href="blog.html" class="btn-get-started-header" style=" padding-left: 18px;">SUSCRIBITE</a>
+        
+        <a href="blog.html" class="btn-get-started-header" style=" padding-left: 20px;">SUSCRIBITE</a>
         <!--a href="blog.html" class="btn-get-started">SUSCRIBITE</a-->
       </body>
    
@@ -124,9 +127,26 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <h2 data-aos="fade-up" data-aos-delay="100">El futuro de la moda es reciclado</h2>
+            <style>
+              body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* Regular */
+}
+.medium {
+  font-weight: 500;
+}
+.semi-bold {
+  font-weight: 600; /* Semi Bold */
+}
+
+.bold {
+  font-weight: 700; /* Bold */
+}
+            </style>
+            <h2 data-aos="fade-up" data-aos-delay="100" style="font-weight: 600;">El futuro de la moda es reciclado</h2>
             <p data-aos="fade-up" data-aos-delay="200">Conocé el poder de la moda sustentable y creá ropa reinventada a partir de materiales reciclados. ¡Sé parte del cambio!</p>
             <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+
               
               
   <title>Botón con Imagen de Fondo</title>
@@ -168,27 +188,20 @@
       <title>Sección Clientes con Imagen de Fondo</title>
    
    
-    <body>
-      <!-- Clients Section -->
-      <section id="clients" class="clients section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper init-swiper">
-            
-            <script type="application/json" class="swiper-config">
-
+      <body>
+        <!-- Clients Section -->
+        <section id="clients" class="clients section">
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper init-swiper">
+              
+              <script type="application/json" class="swiper-config">
               {
                 "loop": true,
                 "speed": 600,
                 "autoplay": {
                   "delay": 3000
                 },
-              
                 "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
                 "breakpoints": {
                   "320": {
                     "slidesPerView": 2,
@@ -208,22 +221,20 @@
                   }
                 }
               }
-            </script>
-            <div class="swiper-wrapper align-items-center">
-
-              <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt="" style="height: 40px ;width: 90px;"></div>
+              </script>
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="assets/img/clients/client-2.png"  class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt="" style="height: 40px ;width: 90px;"></div>
+              </div>
             </div>
-            <div class="swiper-pagination" style></div>
           </div>
-        </div>
-      </section><!-- /Clients Section -->
-    </body>
+        </section><!-- /Clients Section -->
+      </body>
 
     
 
@@ -258,27 +269,27 @@
     
             <div class="col-xl-7" >
               <div class="row gy-4">
-                <div class="col-md-6 icon-box position-relative">
+                <div class="col-md-6 icon-box position-relative" style="padding-right: 90px;">
                   <img src="assets/img/icons/Icon-1.png" alt="Icono">
-                  <h4><a href="" class="stretched-link">Diseño y planificación</a></h4>
-                  <p>Creación de bocetos y planificación de las prendas a confeccionar</p>
+                  <h4><a  class="stretched-link">Diseño y planificación</a></h4>
+                  <p> Bocetos y planificación de las prendas a confeccionar </p>
                 </div><!-- Icon-Box -->
     
-                <div class="col-md-6 icon-box position-relative">
+                <div class="col-md-6 icon-box position-relative" style="padding-right: 50px;">
                   <img src="assets/img/icons/Icon-2.png" alt="Icono">
-                  <h4><a href="" class="stretched-link">Técnicas de costura</a></h4>
+                  <h4><a  class="stretched-link">Técnicas de costura</a></h4>
                   <p>Introducción a las técnicas básicas y avanzadas de costura</p>
                 </div><!-- Icon-Box -->
     
-                <div class="col-md-6 icon-box position-relative">
+                <div class="col-md-6 icon-box position-relative" style="padding-right: 90px;">
                   <img src="assets/img/icons/Icon-3.png" alt="Icono">
-                  <h4><a href="" class="stretched-link">Confección de prendas</a></h4>
+                  <h4><a  class="stretched-link">Confección de prendas</a></h4>
                   <p>Uso de máquinas de coser y herramientas necesarias</p>
                 </div><!-- Icon-Box -->
     
-                <div class="col-md-6 icon-box position-relative">
+                <div class="col-md-6 icon-box position-relative" style="padding-right: 50px;">
                   <img src="assets/img/icons/Icon-4.png" alt="Icono">
-                  <h4><a href="" class="stretched-link">Presentación</a></h4>
+                  <h4><a class="stretched-link">Presentación</a></h4>
                   <p>Desfile de moda interno donde los participantes muestran sus creaciones</p>
                 </div><!-- Icon-Box -->
               </div>
@@ -299,7 +310,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding:120px;
-    padding-left: 102px;
+    padding-left: 150px;
     
     
   }
@@ -307,19 +318,20 @@
   .quienes-somos .content {
       padding-left: 0;
       padding-right: 0;
+      align-items: center;
    }
 
   .quienes-somos .content h3 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 32px;
-    margin: 10px 0 30px 0;
+    margin: 10px 0 0 0;
     padding-top: 10px;
-    padding-right: 50px;
+    padding-right: 0px;
   }
 
   .quienes-somos .content p {
     font-weight: 400;
-    font-size: 17px;
+    font-size: 16px;
     margin: 10px 0 0 0;
  
   }
@@ -332,9 +344,47 @@
     outline: 2px;
     outline-style: solid;
     outline-color: #000000;
+
   }
   
+  @media (max-width:412px) {
+    .left-image {
+      align-self: left;
+      margin-left:0px;
+      padding-right: 30px;
+      padding-left: 0px;
+      width: 300%;
+      height: 100%;
+    outline: 2px;
+    outline-style: solid;
+    outline-color: #000000;
 
+  }
+
+  .quienes-somos .content {
+      padding-left: 0;
+      padding-right: 0;
+      align-items: center;
+   }
+
+  .quienes-somos .content h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0px auto;
+    padding-top: 10px;
+
+  }
+
+  .quienes-somos .content p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 10px 0 0 0;
+ 
+  }
+
+  }
 </style>
 
 <body>
@@ -347,11 +397,14 @@
           <img src="assets/img/quienes-somos.jpg" alt="About Us Image" class="left-image">
         </div>
 
-        
-        <div class="content col-xl-7"   style= "padding-left: 120px;margin-top:150px;">
-          <h3 style="font-size: 23px; font-variant: semibold;margin-right: 70px">Expertos en moda sostenible y diseño textil
+        <div class="col-xl-7 content" style=" margin-top: 180px;">
+          <div class="services-sectiontitle" style=" align-self:left;padding-left: 170px; " >
+            <h2service-og>Quienes Somos</h2service-og>
+          </div>
+        <div class="content col-xl-7"   style= "padding-right: 0px;padding-left: 170px;margin-top:5px;width: 600px">
+          <h3 style="font-size: 23px; font-variant: semibold;margin-right: 0px">Expertos en moda sostenible y diseño textil
             con experiencia en reciclaje de diversos materiales</h3>
-          <p style="padding-right: 0px;height: 100px;width: 498px;font-weight: 400 ;font-size: 17px;">
+          <p style="padding-right: 0px;height: 90px;width: 498px;font-weight: 400 ;font-size: 17px;margin-top: 25px;">
             Recogemos prendas en desuso y las transformamos en nuevos artículos de moda. Cada pieza es cuidadosamente seleccionada y rediseñada para maximizar su potencial.
           </p>
           <div class="content col-xl-7"></div>
@@ -372,47 +425,39 @@
   
   <title>Sección Servicios con Imagen de Fondo</title>
       <!--img src="assets/img/servicios-1.jpg" alt="" data-aos="fade-in"-->
-      <section id="background-service" class="background-service>  service-bg">
-        <div class="background-service"></div>
-        <!--div class="background-image"></div-->
+      <section id="background-service" class="background-service service-bg">
 
-        <div class="services-sectiontitle" >
+        <div class="container-service">
+          <div class="services-sectiontitle">
+            <h2service>Servicios</h2service>
+          </div>
+          <div class="service-items">
+            <div class="service-item">
+              <img src="assets/img/icons/icon-5.png" class="service-icon" alt="Moda que respeta al planeta">
+              <div>
+                <h4 class="title"><a>Moda que respeta al planeta</a></h4>
+                <p class="description">Reducir los desechos textiles y promover una industria de la moda más ética y responsable.</p>
+              </div>
+            </div>
       
-          <h2service>Servicios</h2service>
-          
-        </div><!-- End Section Title -->
-          <title>Alinear Items a la Derecha</title>
-          <div class="container-service">
-            <div class="service-items">
-        
-              <div class="service-item" >
-                <img src="assets/img/icons/icon-5.png" class= "service-icon" style="width: 80px; height: 80px;">
-                <div>
-                  <h4 class="title"><!--a href="service-details.html" class="stretched-link"--><a>Moda que respeta al planeta</a></h4>
-                  <p class="description">Reducir los desechos textiles y promover una industria de la moda más ética y responsable.</p>
-                </div>
-              </div><!-- End Service Item -->
-        
-              <div class="service-item" >
-                <img src="assets/img/icons/icon-8.png" class= "service-icon" style="width: 80px; height: 80px;">
-                <div>
-                  <h4 class="title"><a href="index.html" class="stretched-link">Sustentabilidad con estilo</a></h4>
-                  <p class="description">Apoya prácticas de moda responsables y sostenibles.</p>
-                </div>
-              </div><!-- End Service Item -->
-        
-              <div class="service-item" >
-                <img src="assets/img/icons/icon-7.png" class= "service-icon" style="width: 80px; height: 80px;">
-                <div>
-                  <h4 class="title"><a  class="stretched-link">De residuos a tendencias</a></h4>
-                  <p class="description">Participa y ayuda a reducir el desperdicio textil, contribuyendo a un planeta más limpio y verde.</p>
-                </div>
-              </div><!-- End Service Item -->
-        
+            <div class="service-item">
+              <img src="assets/img/icons/icon-8.png" class="service-icon" alt="Sustentabilidad con estilo">
+              <div>
+                <h4 class="title"><a href="index.html" class="stretched-link">Sustentabilidad con estilo</a></h4>
+                <p class="description">Apoyamos prácticas de moda responsables y sostenibles.</p>
+              </div>
+            </div>
+      
+            <div class="service-item">
+              <img src="assets/img/icons/icon-7.png" class="service-icon" alt="De residuos a tendencias">
+              <div>
+                <h4 class="title"><a class="stretched-link">De residuos a tendencias</a></h4>
+                <p class="description">Participá y ayudá a reducir el desperdicio textil, contribuyendo a un planeta más limpio y verde.</p>
+              </div>
             </div>
           </div>
-        
-      </section><!-- /Services Section -->
+        </div>
+      </section>
     
    <!-- Pricing Section -->
 <section id="pricing" class="pricing section pricing-bg">
@@ -420,65 +465,66 @@
   <!-- Section Title -->
   <div class="container section-title" >
     <h2>CURSOS</h2>
+    <div class="pricing-footer">
+      <p>Elegí tu plan y acomodate a los horarios que mas te gusten. ¡Hay para todos los gustos!</p>
+      <p><strong>TODOS NUESTROS TALLERES Y CURSOS SON 100% PRESENCIALES</strong></p>
+    </div>
   </div><!-- End Section Title -->
 
   <div class="container">
 
     <div class="row g-8 g-lg-0">
 
-      <div class="col-lg-8" >
-        <div class="pricing-item">
+      <div class="col-lg-8"  >
+        <div class="pricing-item" style="margin-right: 0px;">
           <img src="assets/img/pricing-2.png" alt="Free Plan" class="pricing-image">
-          <div class="pricing-content-white"style=" padding-bottom: 40px">
+          <div class="pricing-content-white"style= "padding-bottom: 40px">
             <h3 style="margin-bottom: 240px;margin-left: 30px;padding-bottom: 20px;margin-top: 20px;margin-right: 30px;">Diseño y confección</h3>
             <h4><span> $20,000 ARS</span></h4>
             <ul>
-              <li><i class="bi bi-check"></i> <span>1 Prenda a elección</span></li>
+              <li><i class="bi bi-check"></i> <span><strong>1 Prenda a elección </strong></span></li>
               <li><i class="bi bi-check"></i> <span>Técnicas prácticas de costura</span></li>
               <li><i class="bi bi-check"></i> <span>Introducción a la moldería</span></li>
             </ul>
-            <div class="text-center"><a href="#" class="buy-btn">COMPRAR</a></div>
+            <div class="text-center"><a href="blog.html" class="buy-btn">COMPRAR</a></div>
           </div>
         </div>
       </div><!-- End Pricing Item -->
 
       <div class="col-lg-8" >
-        <div class="pricing-item featured">
+        <div class="pricing-item featured" style="margin-left: 40px;">
           <img src="assets/img/pricing-1.png" alt="Free Plan" class="pricing-image">
           <div class="pricing-content" style="margin-bottom: 50px;">
             <h3 style="margin-bottom: 240px;margin-left: 60px;padding-bottom: 60px;">Taller Eco-Voz</h3>
-            <h4 style="margin-left: 60px;">$50,000<span> ARS</span></h4>
+            <h4 style="margin-left: 60px; color: #000000;">$50,000<span> ARS</span></h4>
             <ul style=" margin-left: 50px;">
-              <li><i class="bi bi-check"></i> <span>3 Prendas</span></li>
+              <li><i class="bi bi-check"></i> <span><strong>3 Prendas a elección</strong></span></li>
               <li><i class="bi bi-check"></i> <span>Técnicas de reciclaje textil</span></li>
               <li><i class="bi bi-check"></i> <span>Materiales incluídos</span></li>
           
             </ul>
-            <div class="text-center"><a href="#" class="buy-btn">COMPRAR</a></div>
+            <div class="text-center"><a href="blog.html" class="buy-btn">COMPRAR</a></div>
           </div>
         </div>
       </div><!-- End Pricing Item -->
 
       <div class="col-lg-8" >
-        <div class="pricing-item">
-          <img src="assets/img/pricing-2.png" alt="Free Plan" class="pricing-image">
+        <div class="pricing-item" style="margin-right: 0px;">
+          <img src="assets/img/pricing-3.png" alt="Free Plan" class="pricing-image">
           <div class="pricing-content-white" style=" padding-bottom: 40px">
             <h3 style="margin-bottom: 240px;margin-left: 30px;padding-bottom: 20px;margin-top: 20px;margin-right: 30px;">Reciclaje y reutilizado</h3>
             <h4><span> $35,000 ARS</span></h4>
             <ul>
-              <li><i class="bi bi-check"></i> <span>2 Prendas (conjunto) </span></li>
+              <li><i class="bi bi-check"></i> <span><strong>2 Prendas (conjunto)</strong> </span></li>
               <li><i class="bi bi-check"></i> <span>Técnicas prácticas de costura</span></li>
               <li><i class="bi bi-check"></i> <span>Diseño de moda sostenible</span></li>
             </ul>
-            <div class="text-center"><a href="#" class="buy-btn">COMPRAR</a></div>
+            <div class="text-center"><a href="blog.html" class="buy-btn">COMPRAR</a></div>
           </div>
         </div>
       </div><!-- End Pricing Item -->
 
-      <div class="pricing-footer">
-        <p>Elegí tu plan y acomodate a los horarios que mas te gusten. ¡Hay para todos los gustos!</p>
-        <p><strong>TODOS NUESTROS TALLERES Y CURSOS SON 100% PRESENCIALES</strong></p>
-      </div>
+      
 
     </div>
 
@@ -493,7 +539,22 @@
       <section class="image-text-section" style="outline: 2px;outline-style: solid;outline-color: #000000">
         <img src="assets/img/img-background.jpg" alt="Fondo" class="background-image" style="margin-top: 70px;">
         <div class="overlay-img">
-          <h2-overlay-img>Reinventá tu estilo, respetá el planeta</h2-overlay-img>
+          <style>
+            body {
+font-family: 'Inter', sans-serif;
+font-weight: 400; /* Regular */
+}
+
+.semi-bold {
+font-weight: 600; /* Semi Bold */
+}
+
+.bold {
+font-weight: 700; /* Bold */
+}
+          </style>
+    
+          <h2-overlay-img style="font-weight: 600;">Reinventá tu estilo, respetá el planeta</h2-overlay-img>
           <p></p>
         </div>
       </section>
@@ -513,7 +574,7 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <a href="assets/img/portfolio/app-1.jpg" title="Pants" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/app-1.jpg" title="Prendas hechas en el taller Eco-Voz" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   
                 </div>
               </div>
@@ -523,7 +584,7 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/product-1.jpg" title="Prendas hechas en el taller Eco-Voz" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             
                 </div>
               </div>
@@ -533,7 +594,7 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/branding-1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <a href="assets/img/portfolio/branding-1.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/branding-1.png" title="Prendas hechas en el taller Eco-Voz" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
              
                 </div>
               </div>
@@ -541,9 +602,9 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/apps-2.jpg" title="Prendas hechas en el taller Eco-Voz" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
              
                 </div>
               </div>
@@ -551,9 +612,9 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/books-1.jpg" title="Prendas hechas en el taller Eco-Voz" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 
                 </div>
               </div>
@@ -563,7 +624,7 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/product-2.jpg" title="Prendas hechas en el taller Eco-Voz" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 
                 </div>
               </div>
@@ -625,7 +686,7 @@
                     <h3> Helena García </h3> 
                     <p>
                       
-                      <span>“Utiliza nuestras herramientas y recursos de alta calidad para desarrollar tus habilidades y completar tus proyectos”.</span>
+                      <span>“Utiliza indispensables herramientas y recursos de alta calidad para desarrollar tus habilidades y completar tus proyectos”.</span>
                       
                     </p>
                     <h4>Emprendedora en Moda Circular</h4>
@@ -662,10 +723,10 @@
                     <h3>Camila Larson</h3>
                     <p>
                       
-                      <span>“Diseña y confecciona ropa exclusiva que refleja tu estilo personal y compromiso con el medio ambiente”.</span>
+                      <span>“Diseñá y confeccioná ropa exclusiva que refleja tu estilo personal, un real compromiso con el medio ambiente y prácticas ecológicas”.</span>
                       
                     </p>
-                    <h4 style="margin-top: 75px;">Influencer de Moda</h4>
+                    <h4 style="margin-top: 50px;">Influencer de Moda</h4>
                     <!--div class="stars">
                       <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                     </div-->
@@ -707,7 +768,7 @@
         <p-ct class="flex-two-lines"style=" padding-left: 0px; margin-left: 147px;">
           <span>Si compartís nuestra pasión por la sostenibilidad y el diseño </span>
           <span>innovador, te invitamos a unirte a nosotros.</span>
-        </h2> </p-ct>
+        </h2> 
       </div><!-- End Section Title -->
 
 
@@ -750,7 +811,7 @@
       </div>
 
     </section> <!-- /Contact Section -->
-
+  
   </main>
 
   <footer id="footer" class="footer footer-bg">
@@ -778,7 +839,7 @@
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links" style="padding-right: 0px;padding-left: 100px;">
+        <div class="col-lg-2 col-md-3 footer-links" style="padding-right: 0px;padding-left: 100px;font-size: 13.5px;">
           <h4>Links útiles</h4>
           <ul>
             <li><a href="#">Home</a></li>
@@ -791,7 +852,7 @@
 
       
 
-        <div class="col-lg-4 col-md-12 footer-newsletter" style="padding-left: 250px;width: 575px;padding-right: 0px;" >
+        <div class="col-lg-4 col-md-12 footer-newsletter" style="padding-left: 220px;width: 575px;padding-right: 0px;" >
           <h4>Novedades</h4>
           <p>Para más detalles sobre nuestros talleres, programas y cómo inscribirte 
             ¡Unite a nosotros y sé parte del cambio hacia una moda más
@@ -808,17 +869,13 @@
     </div>
 
     <div class="container copyright text-center ">
-      <div class="footer Copyright= "width=max-width ></div>
+      <div class="footer Copyright= width=max-width "> </div>
       <p>© <span>Copyright</span> <strong class="px-1 sitename"style= "font-family: Righteous">CIRCULO VERDE</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         <a> Designed by Lucila Romero</a>
       </div>
     </div>
-
+  </section>
   </footer>
 
   <!-- Scroll Top -->

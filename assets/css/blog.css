@@ -15,6 +15,7 @@
   --default-font:  "Inter", "Righteous", system-ui, -apple-system, "Segoe UI",  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Inter" "Righteous",  sans-serif; 
   --nav-font: "Righteous" ,  sans-serif; 
+  --nav-drop-font: "Inter";
   --copyright-logofont: "Righteous"
 }
 
@@ -77,7 +78,7 @@ a {
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--nav-dropdown-hover-color), transparent 25%);
+  color: #000000;
   text-decoration: none;
 }
 
@@ -115,6 +116,10 @@ p-ct {
   width: 100%; /* Instead of 1520px */
    max-width: 1920px; /* To prevent excessive stretching on very large screens */
    margin: 0 auto; /* Center the header */
+   outline: 0.7px;
+   outline-style: solid;
+   outline-color: #000000;
+ 
 }
 
 .header .logo {
@@ -159,9 +164,9 @@ p-ct {
   }
 }
 
-.scrolled .header {
+/*.scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
-}
+}/*
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -189,8 +194,8 @@ p-ct {
     color: var(--nav-color);
     padding: 18px 15px;
     font-size: 16px;
-    font-family: var(--default-font);
-    font-weight: 500;
+    font-family: var(--nav-drop-font);
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -307,7 +312,7 @@ p-ct {
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
-    font-family: var(--nav-font);
+    font-family: var(--nav-drop-font);
     font-size: 17px;
     font-weight: 500;
     display: flex;
@@ -522,13 +527,13 @@ p-ct {
 .footer .footer-links ul i {
   padding-right: 2px;
   margin-right: 70px;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 0;
   color: #000000;
 }
 
 .footer .footer-links ul li {
-  padding: 10px 0;
+  padding: 5px 0;
   display: flex;
   align-items: center;
   color: #000000;
@@ -629,6 +634,65 @@ p-ct {
   color: #000000;
 }
 
+@media (max-width: 412px) {
+  .footer {
+    padding: 20px 0;
+    max-height: none; /* Remove the max-height restriction */
+  }
+
+  .footer .footer-about .logo {
+    align-self: center;
+    padding-right:20px;
+  }
+
+  .footer .footer-about .logo span {
+    padding-right: 20px;
+  }
+
+  .footer .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-about {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer .footer-about p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .footer .social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .footer .social-links a {
+    margin: 0 5px;
+  }
+
+  .footer-links,
+  .footer-newsletter {
+    display: none;
+  }
+
+  .footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer .copyright p {
+    font-size: 12px;
+  }
+
+  .footer .credits {
+    text-align: center;
+    font-size: 11px;
+  }
+}
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
@@ -702,7 +766,8 @@ h1-brc-color {
   padding: 0 0 10px 0;
   margin: 0;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
+  outline:none;
 }
 
 .page-title .breadcrumbs ol li+li {
@@ -799,11 +864,12 @@ section,
 }
 .section-title h2 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
   text-transform: uppercase;
+  letter-spacing: 0.08rem;
 }
 
 .container .section-titleh2-ct {
@@ -859,8 +925,8 @@ h2-ct{
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  --default-color: #ffffff;
-  --background-color: #000000;
+  --default-color:#F6EFEA ;
+  --background-color: #F6EFEA;
   --heading-color: #000000;
   width: 100%;
   max-width: 1920px; /* To prevent excessive stretching on very large screens */
@@ -870,26 +936,22 @@ h2-ct{
   padding: 80px 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: var(--default-color);
+  justify-content:right;
+  outline:none;
 
+ 
 
-  
-  
 }
 
 .hero img {
   position: absolute;
-  
   inset: 0;
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  outline: 1px;
-  outline-style: solid;
-  outline-color: #000000;
+
 }
 
 
@@ -897,23 +959,25 @@ h2-ct{
 .hero .container {
   position: relative;
   z-index: 3;
-  margin-left: 800px;
+  margin-left: 1000px;
   padding-left: 50px;
+  
 }
 
 .hero h2 {
   
   margin: 0;
-  padding-right: 40px;
-  font-size: 50px;
-  font-weight: medium 800;
+  padding-right: 20px;
+  font-size: 45px;
+  font-weight: 600;
+  justify-content:right;
 }
 
 .hero h2mod{
   margin: 0;
-  padding-right: 20px;
-  font-size: 38px;
-  font-weight: normal;
+  padding-right: 10px;
+  font-size: 34px;
+  font-weight: 500;
   color: #000000;
 }
 .hero p {
@@ -1018,7 +1082,7 @@ h2-ct{
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about{
+.about-dtl{
   background-image: url('/assets/img/background-4.png'); /* Ruta de la imagen de fondo */
   background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
   background-position: center; /* Centra la imagen */
@@ -1026,9 +1090,12 @@ h2-ct{
   background-attachment: fixed; /* La imagen de fondo se fija cuando se desplaza la página */
   padding: 60px 0; /* Espaciado interno de la sección */
   outline: 2px;
-border:2px #000000
+  outline-style: solid;
+  outline-color: #000000;
+
 } 
-.about .content h3 {
+
+.about-dtl .content h3 {
   font-weight: 600 ;
   font-size: 29px;
   margin-bottom: 30px;
@@ -1038,44 +1105,23 @@ border:2px #000000
   
 }
 
-.about .content p {
+.about-dtl .content p {
   font-weight: 400;
   width: 600px;
-  font-size: 30px;
+  font-size: 28px;
   margin: 10px 0 0 0;
   padding-top: 10px;
   padding-right: 50px
   
 }
 
-/* .about .content .about-btn {
-  padding: 8px 30px 9px 30px;
-  color: var(--default-color);
-  border-radius: 50px;
-  transition: 0.3s;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 13px;
-  display: inline-flex;
-  align-items: center;
-  border: 2px solid var(--accent-color);
-  padding-left: 20px
-} 
 
-.about .content .about-btn i {
-  font-size: 16px;
-  padding-left: 5px;
-}
 
-.about .content .about-btn:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-} ---*/
-
-.container {
+.container-dtl {
   width: 90%;
   margin: auto;
   border: 2px #000000;
+  height: auto;
 }
 
 .icon-row {
@@ -1087,7 +1133,7 @@ border:2px #000000
   text-align: center;
 }
 
-.about .icon-box  {
+.about-dtl .icon-box  {
   font-size: 40px;
   color: var(--accent-color);
   margin-bottom: 10px;
@@ -1105,7 +1151,7 @@ border:2px #000000
   margin: 10 left 0px auto; /* Centra la imagen y añade espaciado inferior */
 
 }
-.about .icon-box h4 {
+.about-dtl .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
   margin: 20px 0 10px 0;
@@ -1114,29 +1160,31 @@ border:2px #000000
 
 }
 .icon-box img {
-  width: 70px; /* Ajusta el tamaño según tus necesidades */
-  height: 70px; /* Ajusta el tamaño según tus necesidades */
+  width: 50px; /* Ajusta el tamaño según tus necesidades */
+  height: 60px; /* Ajusta el tamaño según tus necesidades */
   display: block;
   margin: 10 auto 0px auto; /* Centra la imagen y añade espaciado inferior */
 }
-.about .icon-box h4 a {
+.about-dtl .icon-box h4 a {
   text-align: left;
   width:200px;
   color: var(--heading-color);
   transition: 0.3s;
 }
 
-.about .icon-box p {
+.about-dtl .icon-box p {
   text-align: left;
-  font-size: 12px;
+  font-size: 13px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin-bottom: 0;
   width:200px;
 }
 
-.about .icon-box:hover h4 a {
-  color: #C0E0E0;
+.about-dtl .icon-box:hover h4 a {
+  color: #FFAA6C;
+  cursor:default;
 }
+
 
 .section-bg {
   background-color: transparent;
@@ -1146,6 +1194,56 @@ border:2px #000000
   outline: 2px;
   outline-style: solid;
   outline-color: #000000;
+}
+
+@media (max-width: 412px) {
+  .about-dtl {
+    padding: 30px 0;
+
+  }
+
+  .about-dtl .content h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .about-dtl .content p {
+    width: 100%;
+    font-size: 18px;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .container-dtl {
+    width: 95%;
+    height: 1200px;
+  }
+
+  .icon-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-dtl .icon-box {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-dtl .icon-box h4 {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-dtl .icon-box p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .icon-box img {
+    margin: 0 auto 10px;
+  }
 }
 /*--------------------------------------------------------------
 # Stats Section
@@ -1157,6 +1255,394 @@ border:2px #000000
 /*--------------------------------------------------------------
 # Quienes Somos Section
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Faq Section
+--------------------------------------------------------------*/
+
+
+.faq-item .faq-content {
+  display: none;
+
+
+}
+
+.faq-item.faq-active .faq-content {
+  display: block;
+  
+}
+
+.faq-item .faq-toggle {
+  transition: transform 0.3s;
+}
+
+.faq-item.faq-active .faq-toggle {
+  transform: rotate(90deg);
+}
+.faq .faq-container .faq-item {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 15px;
+  outline: 1px;
+  outline-style: solid;
+  outline-color: #000000;  
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq .faq-container .faq-item h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 30px 0 0;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.faq .faq-container .faq-item h3 .num {
+  color: var(--accent-color);
+  padding-right: 5px;
+}
+
+.faq .faq-container .faq-item h3:hover {
+  color: var(--nav-hover-color);
+}
+
+.faq .faq-container .faq-item .faq-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.faq .faq-container .faq-item .faq-content p {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item .faq-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.faq .faq-container .faq-item .faq-toggle:hover {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-active {
+  background-color: #C0E0E0;
+  border-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+  outline: 2px;
+  outline-style: solid;
+  outline-color: #000000;
+
+}
+
+.faq .faq-container .faq-active h3 {
+  color: var(--default-color);
+}
+
+.faq .faq-container .faq-active .faq-content {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.faq .faq-container .faq-active .faq-toggle {
+  transform: rotate(90deg);
+  color: #000000;
+}
+
+/* Add these new rules at the end of your existing CSS */
+
+.faq .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.faq .col-lg-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+@media (max-width: 991px) {
+  .faq .col-lg-6 {
+    width: 100%;
+  }
+  
+  .faq .col-lg-6:last-child {
+    margin-top: 30px;
+  }
+}
+
+.faq-container.left-column,
+.faq-container.right-column {
+  height: 200%;
+}
+
+
+.faq .faq-container .faq-item .faq-content p {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
+
+.testimonials-bg {
+  background-image: url('..//img/yellow-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 100px 0;
+  height: 100%;
+  outline: 1px;
+  outline-style: solid;
+  outline-color: #000000;
+
+}
+
+
+
+/* Ensure content is above the overlay */
+.testimonials-bg .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: Change text color for better contrast */
+.testimonials-bg h2{
+ text-align: center;
+}
+.testimonials-bg p{
+  outline: none;
+  text-align: center;
+}
+  
+.testimonials-bg .testimonial-item {
+  color: #000000;
+  outline: 2px;
+  outline-style: solid;
+  outline-color: #000000;
+  
+}
+
+.testimonials .testimonial-item {
+  background-color: var(--accent-color);
+  box-sizing: content-box;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px ;
+  padding-bottom: 50px;
+  margin: 5px 5px;
+  position: relative;
+ 
+  max-width: 100%;
+  height: auto;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 180px;
+  height: 180px;
+  align-items: center;
+  
+  outline: 2px;
+  outline-style: solid;
+  outline-color: #000000;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  text-align: center;
+  padding-right: 60px;
+  padding-left: 60px
+
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-left:auto;
+  margin-top: 50px;
+  text-align:  center;
+}
+
+
+
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 15px auto 15px auto;
+}
+
+@media (max-width: 768px) {
+  .testimonials .testimonial-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .testimonials .testimonial-item {
+      width: 100%;
+      max-width: 400px;
+      margin: 15px 0;
+  }
+
+  .testimonials .testimonial-item .testimonial-img {
+      margin: 0 auto;
+      display: block;
+  }
+
+  .testimonials .testimonial-item h3 {
+      padding-right: 0;
+      padding-left: 0;
+  }
+
+  .testimonials .testimonial-item h4 {
+      margin-left: 0;
+  }
+}
+
+@media (max-width: 412px) {
+  .testimonials .testimonial-item .testimonial-img {
+      width: 100px;
+      height: 100px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+.portfolio .portfolio-filters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+  
+}
+
+.portfolio .portfolio-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 10px;
+  line-height: 1;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-filters li:hover,
+.portfolio .portfolio-filters li.filter-active {
+  color: var(--accent-color);
+}
+
+.portfolio .portfolio-filters li:first-child {
+  margin-left: 0;
+}
+
+.portfolio .portfolio-filters li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 575px) {
+  .portfolio .portfolio-filters li {
+    font-size: 14px;
+    margin: 0 20%;
+  }
+}
+
+.portfolio .portfolio-content {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  outline: 2px;
+  outline-style: solid;
+  outline-color: #000000;
+
+
+}
+
+.portfolio .portfolio-content img {
+  transition: 0.3s;  
+}
+
+.portfolio .portfolio-content .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  
+}
+
+.portfolio .portfolio-content .portfolio-info h4 {
+  font-size: 14px;
+  padding: 5px 10px;
+  font-weight: 400;
+  color: #ffffff;
+  display: inline-block;
+  background-color: var(--accent-color);
+}
+
+.portfolio .portfolio-content .portfolio-info p {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.portfolio .portfolio-content .portfolio-info .preview-link,
+.portfolio .portfolio-content .portfolio-info .details-link {
+  position: absolute;
+  left: calc(50% - 40px);
+  font-size: 26px;
+  top: calc(50% - 14px);
+  color: #fff;
+  transition: 0.3s;
+  line-height: 1.2;
+}
+
+.portfolio .portfolio-content .portfolio-info .preview-link:hover,
+.portfolio .portfolio-content .portfolio-info .details-link:hover {
+  color: var(--accent-color);
+}
+
+.portfolio .portfolio-content .portfolio-info .details-link {
+  left: 50%;
+  font-size: 34px;
+  line-height: 0;
+}
+
+
+
+.portfolio .portfolio-content:hover img {
+  border: 1px #000000;
+  transform: scale(1.1);
+
+}
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1256,6 +1742,10 @@ h2service {
   background-attachment: fixed;
   padding: 90px 0; /* Increased padding for larger vertical size */
   min-height: 800px; /* Increased minimum height */
+  outline: 1px;
+  outline-style: solid;
+  outline-color: #000000;
+
 }
 
 .pricing-item {
@@ -1382,8 +1872,8 @@ h2service {
 }
 
 @media (max-width: 991px) {
-  .pricing-item, .pricing-item.featured {
-    width: 100%;
+  .pricing-item, .pricing-item:not(.featured) {
+    width: auto;
     height: auto;
     margin-bottom: 30px;
   }
@@ -1469,11 +1959,8 @@ h2service {
 
 
 /* MEDIOS DE PAGO SECTION
----/*
-
-/*--------------------------------------------------------------
-# About Section
 --------------------------------------------------------------*/
+
 .mediosdepago{
   background-image: url('/assets/img/background-4.png'); /* Ruta de la imagen de fondo */
   background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
@@ -1482,7 +1969,7 @@ h2service {
   background-attachment: fixed; /* La imagen de fondo se fija cuando se desplaza la página */
   padding: 60px 0; /* Espaciado interno de la sección */
   outline: 2px;
-border:2px #000000
+  border:2px #000000
 } 
 .mediosdepago .content h3 {
   font-weight: 600 ;
@@ -1539,8 +2026,11 @@ border:2px #000000
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 350px; /* Espacio entre iconos */
+  gap: 300px; /* Espacio entre iconos */
   text-align: center;
+  margin-top:0px;
+  margin-left: 100px;
+  margin-right: 0px;
 }
 
 .mediosdepago .icon-box  {
@@ -1562,19 +2052,20 @@ border:2px #000000
 
 }
 .mediosdepago .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight:medium;
   margin: 20px 0 10px 0;
   text-align: center;
   width: 400px;
 
 }
 .icon-box img {
-  width: 70px; /* Ajusta el tamaño según tus necesidades */
-  height: 70px; /* Ajusta el tamaño según tus necesidades */
+  width: 60px; /* Ajusta el tamaño según tus necesidades */
+  height: 50px; /* Ajusta el tamaño según tus necesidades */
   display: block;
   margin: 10 auto 0px auto; /* Centra la imagen y añade espaciado inferior */
 }
+
 .mediosdepago .icon-box h4 a {
   text-align: left;
   width:200px;
@@ -1582,88 +2073,77 @@ border:2px #000000
   transition: 0.3s;
 }
 
-.mediosdepago .icon-box p {
-  text-align: left;
-  font-size: 12px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin-bottom: 0;
-  width:200px;
-}
+
 
 .mediosdepago .icon-box:hover h4 a {
-  color: #C0E0E0;
+  color: #FFAA6C;
+  cursor:default;
 }
 
 .section-bg {
   background-color: transparent;
   padding-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 20px;
   position: relative;
   outline: 2px;
   outline-style: solid;
   outline-color: #000000;
+  height: 400px;
+  align-items: center;
+  margin:auto;
 }
 
-/*--------------------------------------------------------------
-# Img Section
---------------------------------------------------------------*/
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+/* Keep all your existing CSS above this line */
+
+/* Media query for Samsung S20 and similar sized devices */
+@media (max-width: 412px) {
+  .mediosdepago {
+    padding: 30px 0;
+    background-attachment: scroll;
+  }
+
+  .mediosdepago .content h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .mediosdepago .content p {
+    width: 100%;
+    font-size: 18px;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .icon-row-mp {
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .mediosdepago .icon-box {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .mediosdepago .icon-box h4 {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .icon-box img {
+    width: 50px;
+    height: 40px;
+  }
+
+  .section-bg {
+    height: auto;
+    padding-bottom: 20px;
+  }
 }
-
-.image-text-section {
-  position: relative;
-  width: 100%;
-  height: 800px; /* Ajusta la altura según tus necesidades */
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-
-}
-
-.overlay {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  padding-top: 40px;
-  text-align: center;
-  text-transform: lowercase;
-}
-
-.overlay-img {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  padding-top: 65px;
-  text-align: center;
-  text-transform: uppercase;
-
-}
-
-h2-overlay-img {
-  font-size: 30px;
-  font-style: medium ;
-  font-weight:500px;
-  color: #000000
-}
-
- h2 {
-  font-size: 60px;
-  font-weight: 600px;
-  margin-top: 20px;
-  color: #000000
-}
-
 
